@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="theme-color" content="#000000 " />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sufiyan Imran's PORTFOLIO</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://kit.fontawesome.com/1259eeb239.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <div id="header">
+    <div class="container">
+      <nav>
+        <ul id="sidemenu">
+          <li><a href="#header">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <i class="fas fa-sharp fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+        </ul>
+        <i class="fas fa-solid fa-bars" onclick="openmenu()"></i>
+      </nav>
+      <div class="header-text">
+        <p>Web Developer</p>
+        <h1>Hi, I'm <span>Sufiyan Imran</span> <br />from Pakistan</h1>
+      </div>
+    </div>
+  </div>
+  <!-- about -->
+  <div id="about">
+    <div class="container">
+      <div class="row">
+        <div class="about-col-1">
+          <img src="images/sufi.jpeg"
+            onerror="this.onerror=null; this.src='images/profile.jpg';this.style.height='400px';" />
+        </div>
+        <div class="about-col-2">
+          <h1 class="sub-title">About Me</h1>
+
+          <p>
+            Hello! I'm Sufiyan Imran, a passionate Full Stack Web Developer
+            skilled in HTML, CSS, JavaScript, jQuery, React (with Vite), PHP,
+            Laravel, C#, ASP.NET Core MVC, Node.js, MySQL, SQL, MongoDB,
+            Bootstrap, Git, and UI/UX design. I also have experience in mobile
+            app development using Dart and Flutter. Additionally, I have basic
+            knowledge of Angular, Firebase, and Crystal Reports. I specialize
+            in creating intuitive and scalable web and mobile applications
+            that deliver great user experiences. With expertise in design
+            tools like Figma, combined with Office Automation skills to boost
+            productivity, I bring creativity and functionality together in
+            every project. If you're looking for a dedicated full stack
+            developer or someone to elevate your front-end or mobile projects,
+            I’d love to connect and discuss how we can collaborate to bring
+            your vision to life. Thank you for taking the time to get to know
+            me.
+          </p>
+          <br /><br />
+          In addition to my technical proficiency, I have a solid foundation
+          in UI/UX design, leveraging tools like Figma and Canva to bring
+          user-centered designs to life. I thrive on delivering solutions that
+          exceed client expectations, blending creativity with functionality
+          to leave a lasting impact.
+          <br /><br />
+          If you're looking for a dedicated full stack developer or someone to
+          elevate your front-end projects, I'd love to connect and discuss how
+          we can work together to bring your vision to life. Let’s collaborate
+          to create innovative, impactful web experiences!
+          <br /><br />
+          Thank you for taking the time to get to know me.
+          <div class="tab-titles">
+            <p class="tab-links active-link" onclick="opentab('skills')">
+              Skills
+            </p>
+            <p class="tab-links" onclick="opentab('education')">Education</p>
+            <p class="tab-links" onclick="opentab('experience')">
+              Experiences
+            </p>
+          </div>
+          <div class="tab-contents active-tab" id="skills">
+            <ul>
+              <li>
+                <span>Frontend Development: </span><br />Crafting responsive
+                and interactive web interfaces that elevate user experiences.
+              </li>
+              <li>
+                <span>Backend Development:</span><br />Building robust
+                server-side solutions to ensure seamless functionality and
+                scalability.
+              </li>
+            </ul>
+          </div>
+          <div class="tab-contents" id="education">
+            <ul>
+              <li>
+                <span>2023-2026</span><br />ADSE (Software-Engineering)
+                Diploma from Aptech Computer Education
+                Garden,Karachi(In-Process)
+              </li>
+              <li>
+                <span>2022-2023</span><br />K.M.A boys seconaday School
+                Matriculation, Computer Science
+              </li>
+              <li>
+                <span>2024-2025</span><br />Degree Sciece and Commerce college
+              </li>
+            </ul>
+          </div>
+          <div class="tab-contents" id="experience">
+            <ul>
+              <li><span>Pharmacy Billing & Data Entry Operator</span></li>
+              <li><span>Medical Store Billing Executive</span></li>
+              <li><span>2025 (March-April)</span></li>
+              <p>
+                Worked as a Pharmacy Billing and Data Entry Operator where I handled daily
+                billing of medicines using computer-based billing software. I was
+                responsible for entering purchase and sales data accurately into the
+                system and maintaining patient and customer medicine records.
+                I ensured correct medicine prices, quantities, and expiry dates during
+                billing. Additionally, I prepared daily sales reports and billing
+                summaries while assisting customers and coordinating with store staff
+                to ensure smooth store operations.
+              </p>
+            </ul>
+
+            <ul>
+              <li><span>eBay Product Listing & Customer Support Executive</span></li>
+              <li><span>2024</span></li>
+              <p>
+                Worked as an eBay Listing and Customer Support Executive where I created
+                and managed product listings with accurate titles, descriptions, and
+                pricing. I uploaded product images and optimized listings to improve
+                product visibility and sales. I handled customer inquiries, messages,
+                and order-related issues while managing returns, refunds, and feedback
+                to maintain positive seller ratings. I also regularly updated inventory
+                and order status to ensure smooth operations.
+              </p>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- services -->
+  <div id="services">
+    <div class="container">
+      <h1 class="sub-title">My Services</h1>
+      <div class="services-list">
+        <div>
+          <i class="fa-solid fa-code"></i>
+          <h2>Frontend Development:</h2>
+          <p>
+            I specialize in creating visually appealing, responsive, and
+            interactive web interfaces. By using modern technologies like
+            HTML, CSS, JavaScript, and frameworks, I ensure seamless user
+            experiences across all devices.
+          </p>
+        </div>
+        <div>
+          <i class="fa-solid fa fa-server"></i>
+          <h2>Backend Development:</h2>
+          <p>
+            From database design to API integration, I develop scalable and
+            secure server-side solutions. Whether it's handling complex data
+            or building robust architectures, my backend expertise ensures
+            your web applications run smoothly.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- portfolio -->
+  <div id="portfolio">
+    <div class="container">
+      <h1 class="sub-title">My Work</h1>
+      <div class="worklist">
+        <div class="work">
+          <img src="images/image2.png" alt="" />
+          <div class="layer">
+            <h3>FreshShop (E-Commerce Website)</h3>
+            <p>Technologies Used: ASP.NET Core MVC,SQL Server</p>
+            <p>
+              FreshShop is an e-commerce platform enabling users to browse
+              products, add to cart, and complete secure purchases. It
+              features product search, user authentication, and an admin panel
+              for managing inventory.
+            </p>
+            <a target="_blank" href="#"><i
+                class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </div>
+        </div>
+        <div class="work">
+          <img src="images/E-VaccineMangment.png" alt="" />
+          <div class="layer">
+            <h3>E-Vaccination Booking System</h3>
+            <p>Technologies Used: Laravel,MySql</p>
+            <p>
+              Created an E-Vaccination Booking system where users can register
+              and book vaccination slots online. This project involved
+              developing both the front-end and back-end using Laravel, with
+              features like user registration, login, and booking management
+            </p>
+            <a target="_blank" href="#"><i
+                class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="worklist">
+        <div class="work">
+          <img src="images/admindashboard.png" alt="" />
+          <div class="layer">
+            <h3>Admin Dashboard</h3>
+            <p>Technologies Used: Php,MySql</p>
+            <p>
+              Built an admin dashboard to manage users, view reports, and
+              monitor system activity. The dashboard features a CRUD (Create,
+              Read, Update, Delete) system for managing data. Used PHP for
+              backend development to ensure smooth functionality and proper
+              data handling
+            </p>
+            <a target="_blank" href="#"><i
+                class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </div>
+        </div>
+        <div class="work">
+          <img src="images/aptechclone.png" alt="" />
+          <div class="layer">
+            <h3>Student Portal Clone</h3>
+            <p>Technologies Used: Laravel,MySql</p>
+            <p>
+              A Laravel-based Student Portal for managing attendance, marks,
+              profiles, and complaints with real-time updates and database
+              integration.
+            </p>
+            <a target="_blank" href="#"><i
+                class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="worklist">
+        <div class="work">
+          <img src="images/netflixclone.PNG" alt="" />
+          <div class="layer">
+            <h3>Netflix Clone</h3>
+            <p>Technologies Used: Html,Css</p>
+
+            <p>
+              I've created a Netflix clone using HTML and CSS, featuring a
+              responsive layout with a header, movie section, and footer. It's
+              fully customizable and easy to integrate into any project.
+            </p>
+            <a target="_blank" href="https://netflix-clone-theta-eight-90.vercel.app/"><i
+                class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </div>
+        </div>
+        <div class="work">
+          <img src="images/portfolio.PNG" alt="" />
+          <div class="layer">
+            <h3>Portfolio</h3>
+            <p>Technologies Used: Html,Css</p>
+
+            <p>
+              I've also developed a complete portfolio using HTML, CSS, and
+              JavaScript. It's fully responsive and showcases my skills and
+              projects in a clean, interactive layout.
+            </p>
+            <a target="_blank" href="#"><i
+                class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="worklist">
+        <div class="work">
+          <img src="images/NailArtEPorject.png" alt="" />
+          <div class="layer">
+            <h3>Nail Art</h3>
+            <p>Technologies Used: Html,Css</p>
+
+            <p>
+              A visually appealing Nail Art Showcase built using HTML and CSS.
+              This project features a gallery-style layout displaying various
+              nail art designs, focusing on responsive design principles to
+              ensure a smooth viewing experience across different devices.
+            </p>
+            <a target="_blank" href="https://nail-art-e-project.vercel.app/"><i
+                class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </div>
+        </div>
+        <div class="work">
+          <img src="images/image.png" alt="" />
+          <div class="layer">
+            <h3>Simple Counter</h3>
+            <p>Technologies Used: Angular</p>
+
+            <p>
+              A simple counter application built using Angular. This project
+              allows users to increment and decrement a counter with a reset
+              functionality, showcasing the core features of Angular like
+              two-way data binding and component-based architecture.
+            </p>
+            <a target="_blank" href="https://counter-ebon-psi.vercel.app/"><i
+                class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="worklist">
+        <div class="work">
+          <img src="images/onlinemobilerechaege.PNG" alt="" />
+          <div class="layer">
+            <h3>Online Mobile Recharge</h3>
+            <p>Technologies Used: Html,Css,JavaScript,.Net Core MVC ,Sql</p>
+
+            <p>
+              This project allows users to view and select recharge plans and
+              perform mobile recharges. Built using ASP.NET Core MVC and SQL
+              Server, it includes an admin dashboard for managing recharge
+              plans, companies, and transactions.
+            </p>
+            <a target="_blank" href="/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </div>
+        </div>
+        <div class="work">
+          <img src="images/Capture.PNG" alt="" />
+          <div class="layer">
+            <h3>Build an API with ASP.NET Core MVC and Swagger</h3>
+            <p>Technologies Used: ASP.NET Core MVC | SQL Server | Swagger</p>
+
+            <p>
+              Developed a RESTful API using ASP.NET Core MVC, implementing GET
+              and POST methods to retrieve and send data to a SQL Server
+              database. Integrated Swagger for seamless API documentation and
+              testing. This project deepened my understanding of API
+              development, database interaction, and backend architecture in
+              full-stack development.
+            </p>
+            <a target="_blank" href="#"><i
+                class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="worklist">
+        <div class="work">
+          <img src="images/nodejs.png" alt="" />
+          <div class="layer">
+            <h3>Student Management API</h3>
+            <p>Technologies Used: Node.js, Express.js, MongoDB</p>
+            <p>
+              A backend RESTful API designed for managing student records. It
+              supports full CRUD operations using MongoDB and was tested using
+              tools like Postman. This project is backend-focused and ready to
+              be integrated with any frontend framework.
+            </p>
+
+            <a target="_blank" href="#"><i
+                class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </div>
+        </div>
+        <div class="work">
+          <img src="images/flutter.png" alt="Green Living Hub App Screenshot" />
+          <div class="layer">
+            <h3>Green Living Hub - Sustainable Lifestyle Mobile App</h3>
+            <p>Technologies Used: Flutter | Firebase | Dart</p>
+
+            <p>
+              Developed a mobile application to help users adopt sustainable
+              living by calculating carbon footprints, joining eco-conscious
+              communities, discovering green events, and tracking
+              achievements. Integrated Firebase Authentication for secure
+              login and built an engaging UI for seamless user experience.
+              Enhanced environmental awareness through interactive tools and
+              social sharing features.
+            </p>
+            <a target="_blank" href="#"><i
+                class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- contact -->
+  <div id="contact">
+    <div class="container">
+      <div class="row">
+        <div class="contact-left">
+          <h1 class="sub-title">Contact Me</h1>
+          <p>
+            <i class="fa-solid fa-paper-plane"></i>sufiyan.builds@gmail.com
+          </p>
+          <p><i class="fa-solid fa-square-phone"></i>03212325615<br>
+          </p>
+          <div class="social-icons">
+            <a href="https://wa.me/923212325615" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+            </a>
+          </div>
+          <a href="SufiyanImran.pdf" download class="btn btn2">Download CV</a>
+        </div>
+        <div class="contact-right">
+          <form action="https://formspree.io/f/xjkynvkp" method="POST">
+            <input type="text" name="name" placeholder="Your Name" required />
+            <input type="email" name="email" placeholder="Your Email" required />
+            <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+            <button type="submit" class="btn btn2">Sumbit</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="copyright">
+      <p>
+        Copyright © Sufiyan Imran. All Rights Reserved 2026
+      </p>
+    </div>
+  </div>
+</body>
+<script src="script.js"></script>
+
+</html>
